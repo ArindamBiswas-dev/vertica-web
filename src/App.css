@@ -38,20 +38,28 @@
 }
 .AppBody {
   min-height: calc(100vh - 70px - 70px);
-  /* height: 400px; */
-  /* background-color: lightgray; */
 }
 .mainBody {
   height: 400px;
   width: 100%;
   background-color: lightgray;
+}
+.makeItCenter {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.lowerRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 .dragContainer {
   width: 300px;
   height: 200px;
   background-color: gray;
   cursor: grab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
