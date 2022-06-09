@@ -1,12 +1,12 @@
-import { Link, useNavigate } from "react-router-dom";
-import "../App.css";
+import { useNavigate } from 'react-router-dom';
+import '../App.css';
 
 function PageTwo({ setCenterBox }) {
   const navigate = useNavigate();
 
   const goBack = () => {
     setCenterBox(true);
-    navigate("/");
+    navigate('/');
   };
 
   return (
@@ -39,8 +39,7 @@ function PageTwo({ setCenterBox }) {
       </main>
 
       <button className="backBtn" onClick={goBack}>
-        {" "}
-        {"<"} Back
+        {'<'} Back
       </button>
     </div>
   );

@@ -94,10 +94,7 @@ function PageOne({ centerBox, setCenterBox }) {
         </div>
       </header>
       <main className="AppBody">
-        <div
-          // className="mainBody"
-          className={`mainBody ${center ? 'makeItCenter' : ''}`}
-        >
+        <div className={`mainBody ${center ? 'makeItCenter' : ''}`}>
           {showDrag && (
             <Draggable
               onStop={dragRelease}
@@ -115,8 +112,12 @@ function PageOne({ centerBox, setCenterBox }) {
                   bottom: position === 'lowerRight' ? '70px' : '',
                   right: position === 'lowerRight' ? '0' : '',
                   transform: '',
+                  border: centerBox ? '2px solid blue' : '',
                 }}
-              />
+              >
+                <h5>Floating...</h5>
+                <p>Drag me around</p>
+              </div>
             </Draggable>
           )}
         </div>
