@@ -10,5 +10,9 @@ export const Clock = () => {
     return () => clearInterval(interval);
   });
 
-  return <div className="clock">{time.toTimeString().split(' ')[0]}</div>;
+  return (
+    <div className="clock">
+      <p>{time.toTimeString().split(' ')[0]}</p>
+    </div>
+  );
 };
